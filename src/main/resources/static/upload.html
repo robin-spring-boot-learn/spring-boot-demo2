@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test upload file to server</title>
+</head>
+<body>
+<form enctype="multipart/form-data" method="post" action="/upload/files" target="">
+  <label for="file">选择文件: </label>
+  <input type="file" name="file" id="file" required>
+  <label for="username">姓名: </label>
+  <input type="text" name="username" id="username" required>
+  
+  <button type="submit">上传</button>
+</form>
+
+</body>
+</html>

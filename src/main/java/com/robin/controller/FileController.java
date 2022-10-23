@@ -26,4 +26,11 @@ public class FileController {
 		model.addAttribute("name", "Robin");
 		return "index2";
 	}
+	
+	@RequestMapping(path="/index4", method=RequestMethod.GET)
+	public ModelAndView index4(ModelAndView model) {
+		model.addObject("name", "Robin");
+		model.setViewName("index4");
+		return model;
+	}
 }
