@@ -27,6 +27,9 @@ public class UploadController {
 	 */
 	@PostMapping("/files")
 	public Object uploadFiles(MultipartFile file, HttpServletRequest request) {
+		// file.isEmpty(); // 判断文件是否空
+		// file.getSize(); // 图片大小判断，太大阻止上传，防止恶意上传文件
+		
 		String username = request.getParameter("username");
 		System.out.println("用户名："+username);
 		
